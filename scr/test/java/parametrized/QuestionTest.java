@@ -1,4 +1,4 @@
-package Parametrized;
+package parametrized;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
@@ -11,7 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
-import Pages.MainPage;
+import pages.MainPage;
 
 import java.io.IOException;
 
@@ -88,7 +88,7 @@ public class QuestionTest {
     }
 
     @Test
-    public void FAQListTest() {
+    public void faqListTest() {
         MainPage mainPage = new MainPage(driver);
         logger.info("Шаг 1: Пеходим к 'Вопросы о важном'");
         mainPage.goToFAQ();

@@ -1,4 +1,4 @@
-package Parametrized;
+package parametrized;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.DriverManagerType;
@@ -12,15 +12,15 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import Pages.MainPage;
-import Pages.OrderScooter;
+import pages.MainPage;
+import pages.OrderScooter;
 
 import java.io.IOException;
 
 import static java.lang.Thread.sleep;
 import static org.hamcrest.CoreMatchers.startsWith;
-import static Pages.OrderScooter.middleOrderButton;
-import static Pages.OrderScooter.topOrderButton;
+import static pages.OrderScooter.middleOrderButton;
+import static pages.OrderScooter.topOrderButton;
 
 @RunWith(Parameterized.class)
 public class OrderTest {
@@ -39,7 +39,7 @@ public class OrderTest {
     // Кнопка "Заказать"
 
 
-    private static final Logger logger = LogManager.getLogger(Parametrized.QuestionTest.class);
+    private static final Logger logger = LogManager.getLogger(parametrized.QuestionTest.class);
 
 
     public OrderTest(By by, String name, String surname, String address, String subway, String telephone, String date, String period, String colour, String comment) {
